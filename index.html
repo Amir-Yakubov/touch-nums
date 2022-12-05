@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Touch Nums</title>
+</head>
+
+<body onload="onInitGame()">
+    <h1>Touch Nums</h1>
+
+    <div class="difficulty">
+        <legend>Difficulty</legend>
+        <input class="16 checked" type="radio" name="drone" value="16" checked>
+        <label for="huey">Bigginer(16)</label>
+        <input class="25" type="radio" name="drone" value="25">
+        <label for="dewey">Pro(25)</label>
+        <input class="36" type="radio" name="drone" value="36">
+        <label for="louie">Expert(36)</label>
+        <div class="result"></div>
+    </div>
+    <div class="nextNumber">Start with number 1.</div>
+    <div class="clockText"></div>
+    <button class="playAgain invisible" onclick="playAgain()">Restart</button>
+
+    <div class="gameZone">
+        <table class="board" border="1">
+        </table>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
